@@ -1,20 +1,20 @@
 # GIT  configuration 
 
 # Reference 
-# Git Workflow: 
+### Git Workflow: 
 ![Git WorkFlow](https://images.osteele.com/2008/git-transport.png)
 https://blog.osteele.com/2008/05/my-git-workflow/
 
-# Authentication failed without prompt for user name and password
+### Authentication failed without prompt for user name and password
 https://github.com/Microsoft/Git-Credential-Manager-for-Windows/issues/141#issuecomment-199408564
 
-# Git 2.24 breaks existing repositories: filename in tree entry contains backslash
+### Git 2.24 breaks existing repositories: filename in tree entry contains backslash
 https://stackoverflow.com/questions/59345571/pycharm-behaving-strange-with-git-filename-in-tree-entry-contains-backslash
 
-# 1.6 Getting Started - First-Time Git Setup
+### 1.6 Getting Started - First-Time Git Setup
 https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
 
-# What is Origin 
+### What is Origin 
 ![Git Origin](https://static.javatpoint.com/tutorial/git/images/git-origin-master2.png)
 https://www.javatpoint.com/git-origin-master
 
