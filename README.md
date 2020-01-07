@@ -24,6 +24,13 @@ git mergetool
 
 #get the remote changes and merged 
 git pull origin <branch name> 
+
+#park the current changes and make the workingset clean
+git stash
+
+#Apply the latest change to the workingset 
+git stash apply 
+
 ```
 
 # Reference 
