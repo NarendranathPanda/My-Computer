@@ -1,4 +1,26 @@
-# git configuration 
+# GIT  configuration 
+
+# Reference 
+# Git Workflow: 
+![Git WorkFlow](https://images.osteele.com/2008/git-transport.png)
+https://blog.osteele.com/2008/05/my-git-workflow/
+
+# Authentication failed without prompt for user name and password
+https://github.com/Microsoft/Git-Credential-Manager-for-Windows/issues/141#issuecomment-199408564
+
+# Git 2.24 breaks existing repositories: filename in tree entry contains backslash
+https://stackoverflow.com/questions/59345571/pycharm-behaving-strange-with-git-filename-in-tree-entry-contains-backslash
+
+# 1.6 Getting Started - First-Time Git Setup
+https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
+
+# What is Origin 
+![Git Origin](https://static.javatpoint.com/tutorial/git/images/git-origin-master2.png)
+https://www.javatpoint.com/git-origin-master
+
+
+
+
 ```shell
 $ git config --list --show-origin
 file:C:/Program Files/Git/etc/gitconfig http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
@@ -27,24 +49,6 @@ file:.git/config        core.logallrefupdates=true
 file:.git/config        core.symlinks=false
 file:.git/config        core.ignorecase=true
 ```
-# Reference 
-# Git Workflow: 
-![Git WorkFlow](https://images.osteele.com/2008/git-transport.png)
-https://blog.osteele.com/2008/05/my-git-workflow/
-
-# Authentication failed without prompt for user name and password
-https://github.com/Microsoft/Git-Credential-Manager-for-Windows/issues/141#issuecomment-199408564
-
-# Git 2.24 breaks existing repositories: filename in tree entry contains backslash
-https://stackoverflow.com/questions/59345571/pycharm-behaving-strange-with-git-filename-in-tree-entry-contains-backslash
-
-# 1.6 Getting Started - First-Time Git Setup
-https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
-
-# What is Origin 
-![Git Origin](https://static.javatpoint.com/tutorial/git/images/git-origin-master2.png)
-https://www.javatpoint.com/git-origin-master
-
 
 
 
