@@ -1,6 +1,7 @@
 # GIT  configuration 
 
 ## Command 
+```shell
 git init <directory name>
 git add -A 
 git commit -m "<message>"
@@ -23,8 +24,12 @@ git mergetool
 
 #get the remote changes and merged 
 git pull origin <branch name> 
+```
 
 # Reference 
+### Learn git 
+https://www.javatpoint.com/git
+
 ### Git Workflow: 
 ![Git WorkFlow](https://images.osteele.com/2008/git-transport.png)
 
