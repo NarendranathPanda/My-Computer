@@ -1,5 +1,29 @@
 # GIT  configuration 
 
+## Command 
+git init <directory name>
+git add -A 
+git commit -m "<message>"
+
+#Create new branch from the existing branch
+git branch <branch name>
+
+#bring to workingset <branch name > if exist ok , else create new one
+git checkout <branch name >
+
+#Forward the changes to remote repo
+git push
+git push -u origin <new branch name>
+
+#list of configs   
+git config --list
+
+#command line merge in case of conflict check 
+git mergetool  
+
+#get the remote changes and merged 
+git pull origin <branch name> 
+
 # Reference 
 ### Git Workflow: 
 ![Git WorkFlow](https://images.osteele.com/2008/git-transport.png)
