@@ -1,5 +1,5 @@
 # git configuration 
-
+'''
 $ git config --list --show-origin
 file:C:/Program Files/Git/etc/gitconfig http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
 file:C:/Program Files/Git/etc/gitconfig http.sslbackend=openssl
@@ -26,19 +26,19 @@ file:.git/config        core.bare=false
 file:.git/config        core.logallrefupdates=true
 file:.git/config        core.symlinks=false
 file:.git/config        core.ignorecase=true
-
-#Reference 
-Git Workflow: 
+'''
+# Reference 
+# Git Workflow: 
 https://blog.osteele.com/2008/05/my-git-workflow/
 ![Git WorkFlow](https://images.osteele.com/2008/git-transport.png)
 
-Authentication failed without prompt for user name and password
+# Authentication failed without prompt for user name and password
 https://github.com/Microsoft/Git-Credential-Manager-for-Windows/issues/141#issuecomment-199408564
 
-Git 2.24 breaks existing repositories: filename in tree entry contains backslash
+# Git 2.24 breaks existing repositories: filename in tree entry contains backslash
 https://stackoverflow.com/questions/59345571/pycharm-behaving-strange-with-git-filename-in-tree-entry-contains-backslash
 
-1.6 Getting Started - First-Time Git Setup
+# 1.6 Getting Started - First-Time Git Setup
 https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
 
 
