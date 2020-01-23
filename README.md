@@ -10,7 +10,7 @@ git commit -m "<message>"
 git branch <branch name>
 
 #bring to workingset <branch name > if exist ok , else create new one
-git checkout <branch name >
+git checkout -b <branch name >
 
 #Forward the changes to remote repo
 git push
