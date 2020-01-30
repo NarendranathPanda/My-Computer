@@ -3,6 +3,7 @@
 Ref https://www.2daygeek.com/check-installed-packages-in-rhel-centos-fedora-debian-ubuntu-opensuse-arch-linux/
 
 ```yum list installed```
+
 ---------------------------------------------------------------------
 # list of ports 
 Ref https://www.cyberciti.biz/faq/unix-linux-check-if-port-is-in-use-command/
