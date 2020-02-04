@@ -41,6 +41,8 @@ sonar.search.javaOpts=-Xmx512m -Xms512m -XX:+HeapDumpOnOutOfMemoryError
 sonar.path.data=/var/sonarqube/data
 sonar.path.temp=/var/sonarqube/temp
 ==========================================
+![sonar properties](img/sonar.properties.PNG "Sonar Properties Change")
+
 
 # update wrapper config 
 vi /opt/sonarqube/conf/wrapper.conf
