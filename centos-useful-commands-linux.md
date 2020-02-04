@@ -23,3 +23,9 @@ ref https://www.tecmint.com/check-linux-disk-usage-of-files-and-directories/
 
 ```du -d 1 -h ```
 
+# List of Services 
+
+# https://www.cyberciti.biz/faq/check-running-services-in-rhel-redhat-fedora-centoslinux/
+
+```service --status-all```
+```systemctl list-unit-files```
