@@ -36,3 +36,9 @@ Ref https://www.cyberciti.biz/faq/check-running-services-in-rhel-redhat-fedora-c
 ref https://www.cyberciti.biz/faq/check-list-installed-packages-in-centos-linux/
 
 ```yum list installed Packages```
+
+# grep few lines after(-A) and before(-B)
+
+ref  https://ma.ttias.be/grep-show-lines-before-and-after-the-match-in-linux/
+
+```cat test.txt | grep -B 5 -A 5 'search text' ```
