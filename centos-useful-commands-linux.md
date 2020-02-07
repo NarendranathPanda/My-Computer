@@ -30,3 +30,9 @@ Ref https://www.cyberciti.biz/faq/check-running-services-in-rhel-redhat-fedora-c
 ```service --status-all```
 
 ```systemctl list-unit-files```
+
+# List of sudo 
+
+ref https://www.cyberciti.biz/faq/check-list-installed-packages-in-centos-linux/
+
+```yum list installed Packages```
