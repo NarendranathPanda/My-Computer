@@ -37,6 +37,11 @@ ref https://www.cyberciti.biz/faq/check-list-installed-packages-in-centos-linux/
 
 ```yum list installed Packages```
 
+# vi search(%s) text(/[1]/) and replcace[/[2] all the occurances(/g)
+
+```:%s/searchedtext/replacetext/g```
+
+
 # grep few lines after(-A) and before(-B)
 
 ref  https://ma.ttias.be/grep-show-lines-before-and-after-the-match-in-linux/
