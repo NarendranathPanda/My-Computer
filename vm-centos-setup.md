@@ -13,7 +13,8 @@ https://sourceforge.net/projects/osboxes/files/v/vb/10-C-nt/7/7-1908/C_OS1908-VB
 Setup the enp0s8 network so that ip address will not change on every reboot 
 ref: https://mikesmithers.wordpress.com/2018/11/17/virtualbox-configuring-a-host-only-network/ 
 
-```vi /etc/sysconfig/network-scripts/ifcfg-en0s8
+```
+vi /etc/sysconfig/network-scripts/ifcfg-en0s8
 ###############################
 TYPE=ETHERNET
 BOOTPROTO=none
