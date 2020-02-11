@@ -6,9 +6,9 @@ https://sourceforge.net/projects/osboxes/files/v/vb/10-C-nt/7/7-1908/C_OS1908-VB
 
 ## Network Adapter 1 
    1. Adapter 1:  Bridge Adater (this is for internet)
-   ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+   ![Image of Yaktocat](/img/vm-centos-adater-1.PNG)
    2. Adapter 2: Hostonly Network (this is for communication among the vm )
-   ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+   ![Image of Yaktocat](/img/vm-centos-adater-2.PNG))
 
 Setup the enp0s8 network so that ip address will not change on every reboot 
 ref: https://mikesmithers.wordpress.com/2018/11/17/virtualbox-configuring-a-host-only-network/ 
@@ -35,7 +35,7 @@ IPV6_PRIVACY=no
 ###############################
 ```   
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Image of Yaktocat](/img/host-only.PNG)
 
 reboot the newtork 
 reboot the machine(vm)
