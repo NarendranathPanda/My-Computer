@@ -8,14 +8,17 @@ https://sourceforge.net/projects/osboxes/files/v/vb/10-C-nt/7/7-1908/C_OS1908-VB
    1. Adapter 1:  Bridge Adater 
        - This is for internet
        - IP assigned by the dhcp of your network 
-        -The ip address may change on reboot
+       - The ip address may change on reboot
         
    ![Bridge Adater](/img/vm-centos-adater-1.PNG)
    
    2. Adapter 2: Host only Network 
        - This is for communication among the vm
+       
        - This is on the local network
+       
    ![Host only Network](/img/vm-centos-adater-2.PNG))
+
 
 Setup the enp0s8 network so that ip address will not change on every reboot 
 ref: https://mikesmithers.wordpress.com/2018/11/17/virtualbox-configuring-a-host-only-network/ 
@@ -45,7 +48,8 @@ IPV6_PRIVACY=no
 
 ![Oracle Virtual Box /Global tools / Hostonly Network](/img/host-only.PNG)
 
-reboot the newtork 
+- reboot the newtork 
 ``` systemctl restart network```
-reboot the machine(vm)
+
+- reboot the machine(vm)
 ```reboot```
