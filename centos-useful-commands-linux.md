@@ -47,3 +47,14 @@ ref https://www.cyberciti.biz/faq/check-list-installed-packages-in-centos-linux/
 ref  https://ma.ttias.be/grep-show-lines-before-and-after-the-match-in-linux/
 
 ```cat test.txt | grep -B 5 -A 5 'search text' ```
+# get the size of directory
+
+ref  https://ma.ttias.be/grep-show-lines-before-and-after-the-match-in-linux/
+
+```
+cd /your_dir
+du -d 1 -h # -d depth , -h human readable 
+# to the directory size is more than certain MB(M)or GB (G) 
+du -d 1 -h | grep '[0-9]G\>'
+```
+
