@@ -6,11 +6,12 @@ Ref https://www.2daygeek.com/check-installed-packages-in-rhel-centos-fedora-debi
 
 ---------------------------------------------------------------------
 # list of ports 
+
 Ref https://www.cyberciti.biz/faq/unix-linux-check-if-port-is-in-use-command/
 
 ```netstat -tulpn```
 ```
-# Where ss command options are as follows:
+#Where ss command options are as follows:
 #-t : Show only TCP sockets on Linux
 #-u : Display only UDP sockets on Linux
 #-l : Show listening sockets. For example, TCP port 22 is opened by SSHD server.
@@ -41,7 +42,6 @@ ref https://www.cyberciti.biz/faq/check-list-installed-packages-in-centos-linux/
 
 ```:%s/searchedtext/replacetext/g```
 ----------------------------------------------------------------
-
 
 # grep few lines after(-A) and before(-B)
 
