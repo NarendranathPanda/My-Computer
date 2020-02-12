@@ -1,4 +1,4 @@
-# Follow the following procedure to git rid of big size files from the repo (including the history)
+## Follow the following procedure to git rid of big size files from the repo (including the history)
 ref : https://gitlabe2.ext.net.nokia.com/help/user/project/repository/reducing_the_repo_size_using_git.md
 
 ## get BFG file 
@@ -28,5 +28,6 @@ or
 
 ```git reflog expire --expire=now --all && git gc --prune=now --aggressive```
 
-## Finaly push the changes (check for the protected tag : https://gitlabe2.ext.net.nokia.com/help/user/project/protected_tags )
+## Finaly push the changes 
+(check for the protected tag : https://gitlabe2.ext.net.nokia.com/help/user/project/protected_tags )
 ```git push --force-with-lease origin master```
