@@ -18,10 +18,7 @@ Ref https://www.cyberciti.biz/faq/unix-linux-check-if-port-is-in-use-command/
 #-n : Don’t resolve service names i.e. don’t use DNS
 ```
 ----------------------------------------------------------------
-# Check directory size 
-ref https://www.tecmint.com/check-linux-disk-usage-of-files-and-directories/
 
-```du -d 1 -h ```
 
 # List of Services 
 
@@ -30,6 +27,7 @@ Ref https://www.cyberciti.biz/faq/check-running-services-in-rhel-redhat-fedora-c
 ```service --status-all```
 
 ```systemctl list-unit-files```
+----------------------------------------------------------------
 
 # List of sudo 
 
@@ -37,9 +35,12 @@ ref https://www.cyberciti.biz/faq/check-list-installed-packages-in-centos-linux/
 
 ```yum list installed Packages```
 
+----------------------------------------------------------------
+
 # vi search(%s) text(/[1]/) and replcace[/[2] all the occurances(/g)
 
 ```:%s/searchedtext/replacetext/g```
+----------------------------------------------------------------
 
 
 # grep few lines after(-A) and before(-B)
@@ -47,13 +48,15 @@ ref https://www.cyberciti.biz/faq/check-list-installed-packages-in-centos-linux/
 ref  https://ma.ttias.be/grep-show-lines-before-and-after-the-match-in-linux/
 
 ```cat test.txt | grep -B 5 -A 5 'search text' ```
+----------------------------------------------------------------
 # get the size of directory
 
 ref  https://ma.ttias.be/grep-show-lines-before-and-after-the-match-in-linux/
+ref  https://www.tecmint.com/check-linux-disk-usage-of-files-and-directories/
 
 ```
 du -d 1 -h # -d depth , -h human readable 
 # to the directory size is more than certain MB(M)or GB (G) 
 du -d 1 -h  <dir path>| grep '[0-9]G\>'
 ```
-
+----------------------------------------------------------------
