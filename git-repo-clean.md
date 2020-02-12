@@ -1,7 +1,8 @@
 ## Follow the following procedure to git rid of big size files from the repo (including the history)
+
 ref : https://gitlabe2.ext.net.nokia.com/help/user/project/repository/reducing_the_repo_size_using_git.md
 
-## get BFG file 
+## Get BFG file 
 ```
 sudo su
 cd /tmp 
