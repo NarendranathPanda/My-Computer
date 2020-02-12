@@ -52,9 +52,8 @@ ref  https://ma.ttias.be/grep-show-lines-before-and-after-the-match-in-linux/
 ref  https://ma.ttias.be/grep-show-lines-before-and-after-the-match-in-linux/
 
 ```
-cd /your_dir
 du -d 1 -h # -d depth , -h human readable 
 # to the directory size is more than certain MB(M)or GB (G) 
-du -d 1 -h | grep '[0-9]G\>'
+du -d 1 -h  <dir path>| grep '[0-9]G\>'
 ```
 
