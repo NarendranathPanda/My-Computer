@@ -30,4 +30,5 @@ or
 
 ## Finaly push the changes 
 (check for the protected tag : https://gitlabe2.ext.net.nokia.com/help/user/project/protected_tags )
+
 ```git push --force-with-lease origin master```
