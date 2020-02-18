@@ -38,7 +38,8 @@ ref https://www.cyberciti.biz/faq/check-list-installed-packages-in-centos-linux/
 
 ----------------------------------------------------------------
 
-# vi search(%s) text(/[1]/) and replcace[/[2] all the occurances(/g)
+# Search and Replace
+vi search(%s) text(/[1]/) and replcace[/[2] all the occurances(/g)
 
 ```:%s/searchedtext/replacetext/g```
 ----------------------------------------------------------------
