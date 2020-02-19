@@ -61,3 +61,13 @@ du -d 1 -h # -d depth , -h human readable
 du -d 1 -h  <dir path>| grep '[0-9]G\>'
 ```
 ----------------------------------------------------------------
+
+# List of Users
+
+ref : https://www.liquidweb.com/kb/list-users-centos-7/
+
+```cut -d: -f1 /etc/passwd```
+
+-----------------------------------------------------------------
+
+
