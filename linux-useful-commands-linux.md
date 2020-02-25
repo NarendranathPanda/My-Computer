@@ -27,6 +27,22 @@ Ref https://www.cyberciti.biz/faq/check-running-services-in-rhel-redhat-fedora-c
 
 ```service --status-all```
 
+----------------------------------------------
+
+# Add user with group of Services 
+
+Ref https://linux.die.net/man/8/useradd
+
+```
+sudo useradd -Urs /bin/false username
+```
+
+----------------------------------------------
+
+
+
+
+
 ```systemctl list-unit-files```
 ----------------------------------------------------------------
 
