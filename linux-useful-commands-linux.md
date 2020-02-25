@@ -25,12 +25,14 @@ Ref https://www.cyberciti.biz/faq/unix-linux-check-if-port-is-in-use-command/
 
 Ref https://www.cyberciti.biz/faq/check-running-services-in-rhel-redhat-fedora-centoslinux/
 
-```service --status-all
+```
+service --status-all
 
-systemctl list-unit-files```
+systemctl list-unit-files
+```
 ----------------------------------------------
 
-# Add user with group of Services 
+# Add user with same group and username 
 
 Ref https://linux.die.net/man/8/useradd
 
