@@ -50,6 +50,10 @@ vi /opt/sonarqube/conf/wrapper.conf
 wrapper.java.command=/usr/lib/jvm/java-11-openjdk-11.0.6.10-1.el7_7.x86_64/bin/java
 ==========================================
 
+sysctl -w vm.max_map_count=262144
+sysctl -w fs.file-max=65536
+ulimit -n 65536
+ulimit -u 4096
 
 
 # add the service 
