@@ -1,4 +1,23 @@
 # GIT  configuration 
+## Setup when you are behind the corporate firewall
+ref : https://github.com/w3c/epubcheck/issues/771#issuecomment-309230445
+The right way to go is using https than should be enable by your firewall. However, you need to declare the proxy corporate to git. 
+
+Depending on whether you need to authenticate or not you should add this information to the global configuration of git :
+
+```
+git config --global http.proxy http://proxyuser:proxypwd@proxy.server.com:8080
+```
+or
+```
+git config --global http.proxy http://proxy.server.com:8080
+```
+Then the command
+```
+git clone https://github.com/WSchindler/epubcheck.git
+```
+should work
+
 
 ## Command 
 ```shell
