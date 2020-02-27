@@ -1,3 +1,20 @@
+# How to check os version in Linux command line
+Open the terminal application (bash shell)
+
+For remote server login using the ssh: ssh user@server-name
+
+Type any one of the following command to find os name and version in Linux:
+```
+cat /etc/os-release
+lsb_release -a
+hostnamectl
+```
+Type the following command to find Linux kernel version:
+```
+uname -r
+```
+-----------------------------------------------------------
+
 # list of packages installed 
 
 Ref https://www.2daygeek.com/check-installed-packages-in-rhel-centos-fedora-debian-ubuntu-opensuse-arch-linux/
