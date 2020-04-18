@@ -109,4 +109,34 @@ The string >/dev/null means “send stdout to /dev/null,” and the second part,
 
 -----------------------------------------------------------------
 
+# writing to file without cat EOF
+ref : https://linuxize.com/post/create-a-file-in-linux/#creating-a-file-with-cat-command
 
+```
+cat >>file-path<<EOF
+content
+EOF
+```
+## example
+```cat >>/etc/hosts<<EOF
+172.42.42.100 kmaster.example.com kmaster
+172.42.42.101 kworker1.example.com kworker1
+172.42.42.102 kworker2.example.com kworker2
+EOF
+```
+
+# writing to file with echo 
+
+echo "Some line" > file1.txt
+
+# writing multiple lines to a file with cat 
+
+```
+cat > file1.txt
+```
+
+The cat command is mainly used to read and concatenate files, but it can also be used for creating new files.
+
+To create a new file run the cat command followed by the redirection operator > and the name of the file you want to create. Press Enter type the text and once you are done press the CRTL+D to save the files.
+
+-----------------------------------------------------------------
