@@ -99,3 +99,14 @@ ref : https://www.liquidweb.com/kb/list-users-centos-7/
 -----------------------------------------------------------------
 
 
+# Redirect All Output to /dev/null
+
+ref : https://www.maketecheasier.com/dev-null-in-linux/
+
+```<command> >/dev/null 2>&1```
+
+The string >/dev/null means “send stdout to /dev/null,” and the second part, 2>&1, means send stderr to stdout. In this case you have to refer to stdout as “&1” instead of simply “1.” Writing “2>1” would just redirect stdout to a file named “1.”
+
+-----------------------------------------------------------------
+
+
