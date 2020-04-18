@@ -8,6 +8,7 @@ Type any one of the following command to find os name and version in Linux:
 cat /etc/os-release
 lsb_release -a
 hostnamectl
+cat /etc/redhat-release
 ```
 Type the following command to find Linux kernel version:
 ```
@@ -78,6 +79,24 @@ ref  https://ma.ttias.be/grep-show-lines-before-and-after-the-match-in-linux/
 
 ```cat test.txt | grep -B 5 -A 5 'search text' ```
 ----------------------------------------------------------------
+
+# memory usage
+
+ref 
+
+```
+free -m
+```
+----------------------------------------------------------------
+# cpu details
+
+ref 
+
+```
+nproc
+```
+----------------------------------------------------------------
+
 # get the size of directory
 
 ref  https://ma.ttias.be/grep-show-lines-before-and-after-the-match-in-linux/
