@@ -1,5 +1,7 @@
 # GIT  configuration 
 ![git pull request](https://github.com/NarendranathPanda/my-configuration/blob/master/img/git.png)
+
+
 ## Command 
 ```shell
 git init <directory name>
@@ -43,7 +45,7 @@ git remote -v
 git fetch upstream
 git pull upstream master
 ```
-
+ref : https://www.youtube.com/playlist?list=PL2rC-8e38bUXloBOYChAl0EcbbuVjbE3t
 
 
 # git pull request 
