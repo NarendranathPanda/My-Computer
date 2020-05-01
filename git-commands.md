@@ -1,18 +1,24 @@
 # GIT  configuration 
 ## Setup when you are behind the corporate firewall
-ref : https://github.com/w3c/epubcheck/issues/771#issuecomment-309230445
-The right way to go is using https than should be enable by your firewall. However, you need to declare the proxy corporate to git. 
 
+ref : https://github.com/w3c/epubcheck/issues/771#issuecomment-309230445
+
+The right way to go is using https than should be enable by your firewall. However, you need to declare the proxy corporate to git. 
 Depending on whether you need to authenticate or not you should add this information to the global configuration of git :
+
 
 ```
 git config --global http.proxy http://proxyuser:proxypwd@proxy.server.com:8080
 ```
+
 or
+
 ```
 git config --global http.proxy http://proxy.server.com:8080
 ```
+
 Then the command
+
 ```
 git clone https://github.com/WSchindler/epubcheck.git
 ```
@@ -50,7 +56,20 @@ git stash
 #Apply the latest change to the workingset 
 git stash apply 
 
+#git add upstream 
+git remote add <name> <url>
+example
+git remote add upstream https://github.com/grafana/grafana.git
+
+# check the remotes 
+git remote -v
+
+#get remote repo content in local
+git fetch upstream
+git pull upstream master
 ```
+
+
 
 # git pull request 
 ![git pull request](https://github.com/NarendranathPanda/my-configuration/blob/master/img/git.png)
