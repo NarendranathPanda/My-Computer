@@ -59,7 +59,7 @@ sudo useradd -Urs /bin/false username
 ```
 ----------------------------------------------------------------
 
-# List of sudo 
+# List of packages
 
 ref https://www.cyberciti.biz/faq/check-list-installed-packages-in-centos-linux/
 
@@ -158,4 +158,28 @@ The cat command is mainly used to read and concatenate files, but it can also be
 
 To create a new file run the cat command followed by the redirection operator > and the name of the file you want to create. Press Enter type the text and once you are done press the CRTL+D to save the files.
 
+-----------------------------------------------------------------
+# create a user and allow it to be sudo
+
+ref : https://www.digitalocean.com/community/tutorials/initial-server-setup-with-centos-7
+
+This example creates a new user called “demo”, but you should replace it with a user name that you like:
+
+```shell
+
+#create user
+adduser demo
+```
+Next, assign a password to the new user (again, substitute “demo” with the user that you just created):
+```
+#set it's password 
+passwd demo
+```
+As root, run this command to add your new user to the wheel group (substitute the highlighted word with your new user):
+
+```
+# add it to the wheel group ,hence it can be used sudo
+gpasswd -a demo wheel
+
+```
 -----------------------------------------------------------------
