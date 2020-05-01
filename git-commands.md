@@ -53,7 +53,7 @@ git stash apply
 ```
 
 # git pull request 
-![git pull request](https://static.javatpoint.com/tutorial/git/images/git.png)
+![git pull request](https://github.com/NarendranathPanda/my-configuration/blob/master/img/git.png)
 
 # Reference 
 ### Learn git 
