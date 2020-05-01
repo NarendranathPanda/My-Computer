@@ -52,6 +52,9 @@ git stash apply
 
 ```
 
+# git pull request 
+![git pull request](https://static.javatpoint.com/tutorial/git/images/git.png)
+
 # Reference 
 ### Learn git 
 https://www.javatpoint.com/git
