@@ -7,6 +7,9 @@
 git init <directory name>
 git add -A 
 git commit -m "<message>"
+git remote add <name> <url>
+git pull origin master --allow-unrelated-histories
+
 
 #Create new branch from the existing branch
 git branch <branch name>
