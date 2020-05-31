@@ -12,6 +12,7 @@ read kube
 export KUBECONFIG=~/.kube/k8s/$kube
 alias k=kubectl
 complete -F __start_kubectl k
+source <(kubectl completion bash | sed 's/kubectl/k/g')
 
 echo "------------------cluster-info--------------------------"
 
