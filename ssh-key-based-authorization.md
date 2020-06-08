@@ -24,3 +24,5 @@ ssh-keygen -t rsa
 ```
 ssh-copy-id <user>@<hostip>
 ```
+
+alternatively add the public key of the machine to the target machine's ``` ~/.ssh/authorized_keys``` (chmod 600)
