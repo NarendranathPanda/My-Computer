@@ -183,3 +183,10 @@ gpasswd -a demo wheel
 
 ```
 -----------------------------------------------------------------
+
+# Add the host key to the known host
+ref : https://serverfault.com/questions/321167/add-correct-host-key-in-known-hosts-multiple-ssh-host-keys-per-hostname
+```
+ssh-keyscan -t rsa <ip>
+
+```
