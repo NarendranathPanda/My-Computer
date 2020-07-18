@@ -9,6 +9,7 @@ echo "--------------------------------------------"
 
 echo -n "Env : "
 read kube
+kube="${kube:-config}"
 export KUBECONFIG=~/.kube/k8s/$kube
 alias k=kubectl
 complete -F __start_kubectl k
