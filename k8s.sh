@@ -1,6 +1,6 @@
 #! /bin/bash
 kube=$1
-if [ -z $kube];then
+if [ -z $kube ];then
  echo  "Select the  environment: "
  echo "--------------------------------------------"
  ls -XA1 ~/.kube/
