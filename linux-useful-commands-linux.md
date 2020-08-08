@@ -57,6 +57,28 @@ Ref https://linux.die.net/man/8/useradd
 ```
 sudo useradd -Urs /bin/false username
 ```
+
+
+# add user in ubuntu 
+ref : https://www.cyberciti.biz/faq/create-a-user-account-on-ubuntu-linux/
+ref: https://phoenixnap.com/kb/how-to-create-sudo-user-on-ubuntu
+
+option 1 :
+```
+sudo adduser narenp
+```
+add user to sudo group 
+```
+usermod -aG sudo narenp
+```
+
+
+option 2 :
+```
+sudo useradd -s /bin/bash -d /home/vivek/ -m -G sudo narenp
+
+```
+
 ----------------------------------------------------------------
 
 # List of packages
