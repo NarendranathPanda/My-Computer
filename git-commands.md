@@ -125,3 +125,36 @@ filter.lfs.clean=git-lfs clean -- %f
 filter.lfs.smudge=git-lfs smudge -- %f
 https.proxy=<proxy url>
 ```
+# Git revert previous commit 
+ref : https://opensource.com/article/18/6/git-reset-revert-rebase-commands
+
+Get the commit logs 
+```git log --oneline```
+
+Select the commit you want to go to 
+``` git reset <commit-sha>
+this will make the change and keep it ready for commit 
+Commit your changes 
+```git commit -m "reverted or added or updated ....."
+
+Finally  push to repo
+```git push <origin> <branch>```
+
+
+or 
+This will reset and do the commit 
+```git revert HEAD```
+
+Finally 
+```git push <origin> <branch>```
+
+
+
+
+
+
+
+
+
+
+
