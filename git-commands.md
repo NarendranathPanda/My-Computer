@@ -131,8 +131,18 @@ ref : https://opensource.com/article/18/6/git-reset-revert-rebase-commands
 Get the commit logs 
 ```git log --oneline```
 
-Select the commit you want to go to 
-``` git reset <commit-sha>
+```
+d0b36e8e (HEAD -> my-branch, origin/my-branch, 7bfd3601ea43488fc92167ea8a2dd3032cf99ec89) updated the version
+c74836bf  fixed the login issue
+ce68f434  add the policy
+```
+
+
+Select the commit you want to go to ```c74836bf```
+``` git reset <commit-sha>```
+example 
+``` git reset c74836bf```
+
 this will make the change and keep it ready for commit 
 Commit your changes 
 ```git commit -m "reverted or added or updated ....."
@@ -147,14 +157,3 @@ This will reset and do the commit
 
 Finally 
 ```git push <origin> <branch>```
-
-
-
-
-
-
-
-
-
-
-
