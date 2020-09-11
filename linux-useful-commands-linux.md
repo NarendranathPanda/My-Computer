@@ -212,3 +212,18 @@ ref : https://serverfault.com/questions/321167/add-correct-host-key-in-known-hos
 ssh-keyscan -t rsa <ip>
 
 ```
+# use of sed
+ref: https://linuxhint.com/replace_string_in_file_bash/#:~:text=To%20replace%20content%20in%20a,the%20string%20in%20a%20file.
+cat <filename> | sed 's/text-to-change/text-to-insert/g'
+
+# use of awk
+#get the first coloumn value
+cat <filename>| awk '{ print $1}'
+#replace in file   
+cat <filename>| awk '{sub("text-to-change","text-to-insert")}1' 
+
+
+
+
+
+
