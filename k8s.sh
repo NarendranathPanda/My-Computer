@@ -17,6 +17,8 @@ source <(kubectl completion bash | sed 's/kubectl/k/g')
 
 echo "------------------cluster-info--------------------------"
 
+export do="-o yaml --dry-run=client"
+
 k cluster-info
 
 echo "------------------context-info--------------------------"
