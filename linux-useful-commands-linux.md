@@ -223,6 +223,15 @@ cat <filename>| awk '{ print $1}'
 cat <filename>| awk '{sub("text-to-change","text-to-insert")}1' 
 
 
+----------------------------------
+# Enable /disable Password based authentication 
+```
+vi /etc/ssh/sshd_config
+#Change this key in the file 
+--> PasswordAuthentication yes
+service sshd restart
+
+```
 
 
 
