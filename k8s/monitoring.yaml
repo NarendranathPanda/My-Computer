@@ -1,0 +1,73 @@
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  labels:
+    app: prometheus
+  name: prometheus
+  namespace: default
+spec:
+  replicas: 1
+  serviceName: prometheus
+  selector:
+    matchLabels:
+      app: prometheus
+  template:
+    metadata:
+      labels:
+        app: prometheus
+    spec:
+      volumes:
+      - name: promconfig
+        configMap:
+          name: promconfig
+      containers:
+      - image: prom/prometheus
+        args:
+         - --config.file=/etc/prometheus/prometheus.yml
+        imagePullPolicy: Always
+        name: prometheus
+        volumeMounts:
+        - name: promconfig
+          mountPath: /etc/prometheus/
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: grafana
+  name: grafana
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: grafana
+  template:
+    metadata:
+      labels:
+        app: grafana
+    spec:
+      containers:
+      - image: grafana/grafana
+        name: grafana
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: grafana
+  name: grafana
+  namespace: default
+spec:
+  clusterIP: 10.99.191.57
+  externalTrafficPolicy: Cluster
+  ports:
+  - nodePort: 32695
+    port: 80
+    protocol: TCP
+    targetPort: 3000
+  selector:
+    app: grafana
+  sessionAffinity: None
+  type: NodePort
