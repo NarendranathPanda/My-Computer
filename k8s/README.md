@@ -1,7 +1,8 @@
 # Kubernetes Installation:
  Create 1 AWS ubuntu VM (t2 medium for master) and 1 more ec2 instance (t2micro for node)
 
-## Step 1. Run following command on Master and Node VM (VM1 & VM2), We need to install kubeadm,kubectl,kubelet and cni
+## Step 1.
+ Run following command on Master and Node VM (VM1 & VM2), We need to install kubeadm,kubectl,kubelet and cni
 
 ```
 apt-get update && apt-get install -y apt-transport-https
@@ -26,7 +27,8 @@ kubectl: command line utility to talk to your cluster.
 kubernetes-cni: used for kubernetes networking)
 
 
-## Step 2. Run following command on Master VM (VM1) only
+## Step 2. 
+Run following command on Master VM (VM1) only
 ```
 kubeadm init
 
@@ -34,7 +36,8 @@ kubeadm init
 #Copy kubeadm join output command in notepad
 #(It will look like... kubeadm join --token ef6acb.11b6129ab3a2fbe0 172.31.22.102:6443 --discovery-token-ca-cert-hash sha256:e83e2872f599eea6b13d42a7b4a01a55958a78c6439192c8d2bb4578797de686 )
 
-## Step 3. Run following command on Master VM (VM1)
+## Step 3.
+Run following command on Master VM (VM1)
 ```
 sudo cp /etc/kubernetes/admin.conf $HOME/
 sudo chown $(id -u):$(id -g) $HOME/admin.conf
@@ -42,18 +45,21 @@ export KUBECONFIG=$HOME/admin.conf
 kubectl apply -f https://cloud.weave.works/k8s/net?k8s-version=1.10
 ```
 
-## Step 4. To Docker cgroup driver matches the kubelet config (VM1)
+## Step 4.
+To Docker cgroup driver matches the kubelet config (VM1)
 ```
 docker info | grep -i cgroup
 cat /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
 ```
 
-## Step 5. Change the kubelet config to match the Docker cgroup drive (VM1)
+## Step 5.
+Change the kubelet config to match the Docker cgroup drive (VM1)
 ```
 sed -i "s/cgroup-driver=systemd/cgroup-driver=cgroupfs/g" /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
 ```
 
-## Step 6. To restarting kubelet run following command (VM1)
+## Step 6.
+To restarting kubelet run following command (VM1)
 ```
 systemctl daemon-reload
 systemctl restart kubelet
@@ -64,7 +70,8 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 kubectl taint nodes --all node-role.kubernetes.io/master-
 kubectl apply -f https://git.io/weave-kube-1.6
 ```
-## Step 7. Run kubeadm join output command on node VM (VM2) (copy output command from step 2).
+## Step 7.
+Run kubeadm join output command on node VM (VM2) (copy output command from step 2).
    Once you run kubeadm join command (Token) on Node VM, your VM will become part of Kubernetes cluster.
 
 ```
