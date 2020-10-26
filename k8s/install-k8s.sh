@@ -31,15 +31,12 @@ kubectl taint nodes --all node-role.kubernetes.io/master-
 kubectl cluster-info
 # Ease of working 
 sudo apt install bash-completion
-source <(kubectl completion bash) 
-echo "source <(kubectl completion bash)" >> ~/.bashrc
-alias k=kubectl
-complete -F __start_kubectl k
-k get nodes
+cp k8s.sh ~/ 
+source ~/k8s.sh
 
 # Workload
-
 k create deployment grafana --image=grafana/grafana
 k expose deployment grafana --type=NodePort --port=80 --target-port=3000
+k get svc
 
 # open the "http://<public-ip>:<new-nodeport>/"
