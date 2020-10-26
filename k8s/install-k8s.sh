@@ -37,3 +37,9 @@ alias k=kubectl
 complete -F __start_kubectl k
 k get nodes
 
+# Workload
+
+k create deployment grafana --image=grafana/grafana
+k expose deployment grafana --type=NodePort --port=80 --target-port=3000
+
+# open the "http://<public-ip>:<new-nodeport>/"
