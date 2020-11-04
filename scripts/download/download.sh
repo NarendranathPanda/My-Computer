@@ -7,7 +7,7 @@ echo "HOME : "$myhome
 printf "\n"
 
 file=$PWD/url_path.txt
-URL=https://download.aiporeto.com/releases/releases-$1
+URL=https://download.test.com/releases/releases-$1
 HOME=$1
 rm -rf $HOME
 mkdir $HOME
