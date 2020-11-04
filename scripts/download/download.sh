@@ -1,4 +1,7 @@
 #!bin/bash
+
+# run bash release.sh 3.14.7
+
 myhome=$PWD
 echo "HOME : "$myhome
 printf "\n"
