@@ -31,3 +31,11 @@
 # verification 
 ```openssl x509  -noout -text -in ./ca.crt ```
 
+
+Tips:  To add Alias in the certificate 
+# OpenSSl conf file 
+ref : https://github.com/openssl/openssl/blob/master/apps/openssl.cnf
+```openssl req -new -key ca.key -subj "/CN=KUBERNETES-CA" -out ca.csr -config openssl.cnf```
+
+
+
