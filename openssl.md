@@ -26,8 +26,8 @@ Use OpenSSL to generate certificate
 ```openssl req -new -key ca.key -subj "/CN=KUBERNETES-CA" -out ca.csr```
 
 # Self sign the csr using its own private key
-openssl x509 -req -in ca.csr -signkey ca.key -CAcreateserial  -out ca.crt -days 1000
+```openssl x509 -req -in ca.csr -signkey ca.key -CAcreateserial  -out ca.crt -days 1000```
 
 # verification 
-openssl x509  -noout -text -in ./ca.crt 
+```openssl x509  -noout -text -in ./ca.crt ```
 
