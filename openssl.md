@@ -1,4 +1,4 @@
-Use OpenSSL to generate certificate 
+# Use OpenSSL to generate certificate 
 - ref: https://www.youtube.com/watch?v=wzbf9ldvBjM&t=4s&ab_channel=TutorialsPedia
 - ref: https://github.com/mmumshad/kubernetes-the-hard-way/blob/master/docs/04-certificate-authority.md
 - ref: https://kubernetes.io/docs/concepts/cluster-administration/certificates/
