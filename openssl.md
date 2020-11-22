@@ -20,7 +20,7 @@ Use OpenSSL to generate certificate
 ```openssl genrsa -out ca.key 2048```
 
 # Extract the public key 
-```openssl rsa -in ca.key -pubout -out ca.pub```
+```openssl rsa -in ca.key -pubout -out ca.pem```
 
 # Create CSR using the private key
 ```openssl req -new -key ca.key -subj "/CN=KUBERNETES-CA" -out ca.csr```
