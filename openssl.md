@@ -1,7 +1,7 @@
 Use OpenSSL to generate certificate 
 - ref: https://www.youtube.com/watch?v=wzbf9ldvBjM&t=4s&ab_channel=TutorialsPedia
 - ref: https://github.com/mmumshad/kubernetes-the-hard-way/blob/master/docs/04-certificate-authority.md
-
+- ref: https://kubernetes.io/docs/concepts/cluster-administration/certificates/
 
 # Download openSSL utility 
 1. https://github.com/openssl/openssl/releases
@@ -27,4 +27,7 @@ Use OpenSSL to generate certificate
 
 # Self sign the csr using its own private key
 openssl x509 -req -in ca.csr -signkey ca.key -CAcreateserial  -out ca.crt -days 1000
+
+# verification 
+openssl x509  -noout -text -in ./ca.crt 
 
