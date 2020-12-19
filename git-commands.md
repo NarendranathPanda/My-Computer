@@ -145,11 +145,10 @@ example
 
 this will make the change and keep it ready for commit 
 Commit your changes 
-```git commit -m "reverted or added or updated ....."
+```git commit -m "reverted or added or updated .....```
 
 Finally  push to repo
 ```git push <origin> <branch>```
-
 
 or 
 This will reset and do the commit 
@@ -157,3 +156,24 @@ This will reset and do the commit
 
 Finally 
 ```git push <origin> <branch>```
+
+# git setup
+Useful commands , tips and tricks 
+
+
+# 1. Clone dosen't work behind corporate firewall
+
+https://github.com/w3c/epubcheck/issues/771#issuecomment-309230445
+
+
+The right way to go is using https than should be enable by your firewall. However, you need to declare the proxy corporate to git. Depending on whether you need to authenticate or not you should add this information to the global configuration of git :
+
+git config --global http.proxy http://proxyuser:proxypwd@proxy.server.com:8080
+or
+git config --global http.proxy http://proxy.server.com:8080
+
+Then the command
+git clone https://github.com/WSchindler/epubcheck.git
+
+
+
