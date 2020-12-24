@@ -1,0 +1,8 @@
+naren-k8s-master ansible_host=10.164.196.33
+naren-k8s-worker1 ansible_host=10.164.196.143
+naren-k8s-worker2 ansible_host=10.164.196.228
+
+[k8s]
+naren-k8s-master
+naren-k8s-worker1
+naren-k8s-worker2
