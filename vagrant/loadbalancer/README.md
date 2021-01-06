@@ -1,3 +1,4 @@
+![](lb-k8s.png)
 ## Bring up all the virtual machines
 ```
 vagrant up
