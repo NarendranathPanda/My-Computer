@@ -1,0 +1,23 @@
+global:
+  scrape_interval: 5m
+  scrape_timeout: 10s
+  evaluation_interval: 15s
+  external_labels:
+    monitor: monitor
+    group: Nodes
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+            - <ip>:9093
+rule_files:
+  - "/etc/prometheus/alerts/*.yml"
+scrape_configs:
+  - job_name: blackbox
+    metrics_path: /probe
+    params:
+     module: [http_2xx]
+    static_configs:
+     - targets:
+       - https://<your-url>/
+

@@ -1,0 +1,16 @@
+[Unit]
+Description=prometheus-msteams
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=msteams
+Group=msteams
+Type=simple
+WorkingDirectory=/etc/prometheus-msteams/
+ExecStart=/usr/local/bin/prometheus-msteams server \
+           -l localhost \
+           -p 2000 \
+           --config /etc/prometheus-msteams/msteams_web_hook_channel.yaml
+[Install]
+WantedBy=multi-user.target

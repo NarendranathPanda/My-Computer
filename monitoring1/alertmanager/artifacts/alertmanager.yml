@@ -1,0 +1,29 @@
+global:
+
+route:
+  group_by: ['alertname']
+  group_interval: 30s
+  repeat_interval: 30s
+  group_wait: 30s
+  receiver: 'default'  # default/fallback request handler
+  routes:
+    - receiver: high_priority_receiver
+      match:
+        severity: critical
+    - receiver: low_priority_receiver
+      match:
+        severity: warning
+
+receivers:
+- name: 'high_priority_receiver'
+  webhook_configs:
+    - send_resolved: true
+      url: 'http://localhost:2000/high_priority_channel' # request handler 1
+- name: 'low_priority_receiver'
+  webhook_configs:
+    - send_resolved: true
+      url: 'http://localhost:2000/low_priority_channel' # request handler 2
+- name: 'default'
+  webhook_configs:
+    - send_resolved: true
+      url: 'http://localhost:2000/default' # default request handler

@@ -1,0 +1,50 @@
+{{ define "teams.card" }}
+{
+"@type": "MessageCard",
+"@context": "http://schema.org/extensions",
+"themeColor": "{{- if eq .Status "resolved" -}}2DC72D
+{{- else if eq .Status "firing" -}}
+    {{- if eq .CommonLabels.severity "critical" -}}8C1A1A
+    {{- else if eq .CommonLabels.severity "warning" -}}FFA500
+    {{- else -}}808080{{- end -}}
+{{- else -}}808080{{- end -}}",
+"summary": "Prometheus Alert ({{ .Status }})",
+"title": "Prometheus Alert ({{ .Status }})",
+"sections": [ {{$externalUrl := .ExternalURL}}
+    {{- range $index, $alert := .Alerts }}{{- if $index }},{{- end }}
+    {
+    "activityTitle":
+    {{- if ne $alert.Annotations.description "" -}}
+        "[{{ js $alert.Annotations.description }}]({{ $externalUrl }})",
+    {{- else -}}
+        "[{{ js $alert.Annotations.message }}]({{ $externalUrl }})",
+    {{- end -}}
+    "facts": [
+        { "name": "Status", "value": "{{ .Status }}" },
+        { "name": "StartsAt", "value": "{{ js .StartsAt }}" },
+        {{- if and .EndsAt  ( not .EndsAt.IsZero ) }}
+        { "name": "EndsAt", "value": "{{ js .EndsAt }}" },
+        {{- end}}
+        { "name": "ExternalURL", "value": "{{ js $externalUrl }}" },
+        { "name": "GeneratorURL", "value": "{{ js .GeneratorURL }}" },
+
+        {{- range $key, $value := $alert.Annotations }}
+            {
+            "name": "{{ reReplaceAll "_" "\\\\_" $key }}",
+            "value": "{{ reReplaceAll "_" "\\\\_" $value | js }}"
+            },
+        {{- end -}}
+        {{$c := counter}}{{ range $key, $value := $alert.Labels }}{{if call $c}},{{ end }}
+            {
+            "name": "{{ reReplaceAll "_" "\\\\_" $key }}",
+            "value": "{{ reReplaceAll "_" "\\\\_" $value | js }}"
+            }
+        {{- end }}
+    ],
+    "markdown": true
+    }
+    {{- end }}
+]
+}
+{{ end }}
+

@@ -1,0 +1,5 @@
+connectors:
+- high_priority_channel: "<webhook>"
+- low_priority_channel: "<webhook>"
+- default: "<webhook>"
+
