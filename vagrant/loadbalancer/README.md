@@ -29,5 +29,5 @@ backend kubernetes-backend
 systemctl restart haproxy
 ```
 Note : 
-LB : 172.16.16.100:6443
-K8S Control Node: 172.16.16.101:6443
+- LB : 172.16.16.100:6443
+- K8S Control Node: 172.16.16.101:6443
