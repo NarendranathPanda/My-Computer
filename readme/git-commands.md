@@ -48,6 +48,13 @@ git remote -v
 #get remote repo content in local
 git fetch upstream
 git pull upstream master
+
+#git merge all of <remote> to <source> branch
+git clone <git-repo-url> -b <source-branch-name>
+git pull origin <remote-branch-name>  -s recursive -X theirs
+git commit -a -m "merged to remote branch"
+git push
+
 ```
 ref : https://www.youtube.com/playlist?list=PL2rC-8e38bUXloBOYChAl0EcbbuVjbE3t
 
