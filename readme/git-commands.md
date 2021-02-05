@@ -55,7 +55,8 @@ git pull origin <remote-branch-name>  -s recursive -X theirs
 git commit -a -m "merged to remote branch"
 git push
 
-
+# discard all change and get back to head
+git reset --hard
 ```
 ref : https://www.youtube.com/playlist?list=PL2rC-8e38bUXloBOYChAl0EcbbuVjbE3t
 
