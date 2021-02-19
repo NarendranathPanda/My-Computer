@@ -34,6 +34,7 @@
    - [ ] Kustomize: https://github.com/kubernetes-sigs/kustomize
    - [ ] Helm: https://helm.sh/
    - [ ] ArgoCD: https://argoproj.github.io/argo-cd/
+   - [ ] GitOps: https://www.weave.works/technologies/gitops/
    - [ ] Jenkins : https://www.jenkins.io/
    - [ ] Harbor: https://goharbor.io/
    - [ ] Docker: https://hub.docker.com/
