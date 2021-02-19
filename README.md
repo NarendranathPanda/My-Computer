@@ -15,7 +15,6 @@
    - [ ] MetalLB: https://metallb.universe.tf/
    - [ ] Calico: https://docs.projectcalico.org/
    - [ ] Flannel: https://github.com/coreos/flannel#flannel
-   -  
 #### Subject: kubernetes log handing
    - [ ] ELK Stack: https://www.elastic.co/blog/kubernetes-observability-tutorial-k8s-log-monitoring-and-analysis-elastic-stack
    - [ ] Grafana Loki: https://grafana.com/docs/grafana/latest/datasources/loki/ 
