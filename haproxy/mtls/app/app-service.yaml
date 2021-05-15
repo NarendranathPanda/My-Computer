@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    haproxy.org/check: "enabled"
+    haproxy.org/forwarded-for: "enabled"
+    haproxy.org/load-balance: "roundrobin"
+  labels:
+    app: app
+  name: app
+  namespace: default
+spec:
+  ports:
+  - port: 80
+    targetPort: 8080
+  selector:
+    app: app

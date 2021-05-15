@@ -87,3 +87,54 @@ ipconfig/renew
  - https://www.youtube.com/watch?v=O5kh_-6e4kk&list=PL6gx4Cwl9DGCkg2uj3PxUWhMDuTw3VKjM&index=19&ab_channel=thenewboston
  - http://boron.physics.metu.edu.tr/ozdogan/OperatingSystems/week12/node5.html
  
+
+
+
+
+CNI 
+Kube-proxy 
+CoreDNS
+
+IP switch - route : Network path :  How 
+----------------------------------------
+```
+ip link 
+ip addr
+ip route 
+```
+Name resolution :DNS   Who
+------------------------ 
+```
+hostname
+```
+
+local machine 
+```
+cat /etc/hosts
+```
+
+address of DNS server 
+```
+cat /etc/resolv.conf
+# IP address of DNS server 
+```
+which order 
+
+```
+cat /etc/nsswitch.conf
+
+```
+
+record types 
+ - CNAME dns - dns 
+ - A     dns - ip4 
+ - AAAA  dns - ipv6
+ 
+To check the ip of a DNS
+```
+nslookup <dns> 
+``` 
+
+
+
+

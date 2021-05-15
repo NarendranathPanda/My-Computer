@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: app1-ingress
+  namespace: app1
+spec:
+  rules:
+    - host: "app1.naren.local"
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: app1
+                port:
+                  number: 80
+  tls:
+    - hosts:
+        - app1.naren.local
+      secretName: app1-tls-secret
